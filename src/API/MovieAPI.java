@@ -156,7 +156,7 @@ public class MovieAPI {
             Connection.Response res = Jsoup.connect(movie_url)
                     .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36")
                     .header("Accept-Language", "en")
-                    .timeout(3000)
+                    .timeout(4000)
                     .method(Connection.Method.GET)
                     .execute();
             //System.out.println(res.body());
@@ -199,6 +199,7 @@ public class MovieAPI {
         try {
             Connection.Response res = Jsoup.connect(movie_url)
                     .ignoreContentType(true)
+                    .timeout(4000)
                     .method(Connection.Method.GET)
                     .execute();
             //tách Json
@@ -259,8 +260,11 @@ public class MovieAPI {
                 System.out.println("\n");
             }
         }*/
+        //tt0100991 - id không có trailer
+        //tt11204372 - id có trailer
         String movieID = "tt4618398";
         Movie_DTO movie = getMovie(movieID);
+        System.out.println("ID phim: "+movie.getID());
         System.out.println("Title: "+movie.getTitle());
         System.out.println("IMDB Rating: "+movie.getImDbRating());
         System.out.println("Trailer: "+movie.getTrailer());

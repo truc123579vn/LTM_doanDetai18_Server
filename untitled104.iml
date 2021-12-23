@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/lib/commons-io-2.11.0/commons-io-2.11.0.jar!/" />
+          <root url="jar://C:/lib/commons-lang3-3.12.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/lib/commons-lang3-3.12.0/commons-lang3-3.12.0.jar!/" />
+          <root url="jar://C:/lib/json-simple-1.1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,7 +37,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/lib/json-simple-1.1.1.jar!/" />
+          <root url="jar://C:/lib/commons-io-2.11.0/commons-io-2.11.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
