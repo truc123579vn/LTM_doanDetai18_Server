@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Server2 {
-    public static int port = 1234;
+    public static int port = 5000;
     public static int numThread = 2;
     private static ServerSocket server = null;
     public static Vector<Worker2> workers = new Vector<>();
